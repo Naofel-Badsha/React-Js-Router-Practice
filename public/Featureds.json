@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "images": "https://i.ibb.co/21sdMBg8/imgi-17-product6-removebg-preview.png",
+        "offer": "10% Off",
+        "name": "Modern Leather Chair",
+        "rating": 4.7,
+        "price": "$120"
+    },
+    {
+        "id": 2,
+        "images": "https://i.ibb.co/pvkPnL2X/imgi-18-product7-removebg-preview.png",
+        "offer": "15% Off",
+        "name": "Elegant Fabric Armchair",
+        "rating": 4.5,
+        "price": "$140"
+    },
+    {
+        "id": 3,
+        "images": "https://i.ibb.co/LDM7Fs59/imgi-13-product3-removebg-preview.png",
+        "offer": "20% Off",
+        "name": "Stylish Wooden Chair",
+        "rating": 4.8,
+        "price": "$99"
+    },
+    {
+        "id": 4,
+        "images": "https://i.ibb.co/h1sxntjp/imgi-11-product1-removebg-preview.png",
+        "offer": "5% Off",
+        "name": "Comfort Office Chair",
+        "rating": 4.3,
+        "price": "$160"
+    },
+    {
+        "id": 5,
+        "images": "https://i.ibb.co/MkW4kdbL/imgi-12-product2-removebg-preview.png",
+        "offer": "25% Off",
+        "name": "Minimalist Lounge Chair",
+        "rating": 4.9,
+        "price": "$180"
+    },
+    {
+        "id": 6,
+        "images": "https://i.ibb.co/8nRsV67h/imgi-14-product4-removebg-preview.png",
+        "offer": "30% Off",
+        "name": "Classic Dining Chair",
+        "rating": 4.2,
+        "price": "$75"
+    },
+    {
+        "id": 7,
+        "images": "https://i.ibb.co/zhnRprd4/imgi-16-product5-removebg-preview.png",
+        "offer": "10% Off",
+        "name": "Luxury Velvet Chair",
+        "rating": 4.6,
+        "price": "$210"
+    },
+    {
+        "id": 8,
+        "images": "https://i.ibb.co.com/Rk2B4sMF/imgi-19-product8-removebg-preview.png",
+        "offer": "18% Off",
+        "name": "Ergonomic Swivel Chair",
+        "rating": 4.4,
+        "price": "$155"
+    }
+]

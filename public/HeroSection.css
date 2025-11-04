@@ -1,0 +1,14 @@
+.HeroBgBanner{
+    background-image: url(https://i.ibb.co/99y4Wmk0/imgi-56-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.featureProductCard{
+   display: none; 
+}
+
+.featureProductCard:hover{
+    display:  inline-block;
+}
