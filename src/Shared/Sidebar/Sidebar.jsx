@@ -1,79 +1,53 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import { Link, NavLink } from "react-router";
 
-export default function AnchorTemporaryDrawer() {
-  const [state, setState] = React.useState({
-    left: false,
-
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
+const Sidebar = () => {
   return (
-    <div>
-      {['left',].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
+    <div className="">
+      <div>
+        {/*-------------Profile---------*/}
+        <Link to="/">
+          <div className="flex gap-4 items-center ">
+            <img
+              className="w-[60px]"
+              src="https://i.ibb.co/gbz6v58b/logo-icon.png"
+              alt=""
+            />
+            <h1 className="text-2xl font-bold">ADDINA</h1>
+          </div>
+        </Link>
+        <hr className="mt-3" />
+
+        {/*------=============------Pages---=======---link------========-----*/}
+        {/*--------------NaVLink--------1---------*/}
+        <li>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#B18B5E] group-hover:text-white font-semibold"
+                : " w-full text-[#000]  "
+            }
           >
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
+            Dashboard
+          </NavLink>
+        </li>
+
+        {/*--------------NaVLink--------2---------*/}
+        <li>
+          <NavLink
+            to="/dashboard/products"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#B18B5E] group-hover:text-white font-semibold"
+                : " w-full text-[#000]  "
+            }
+          >
+            Products
+          </NavLink>
+        </li>
+      </div>
     </div>
   );
-}
+};
+
+export default Sidebar;

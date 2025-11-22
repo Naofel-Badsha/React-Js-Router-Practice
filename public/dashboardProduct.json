@@ -1,0 +1,222 @@
+[
+  {
+    "ID": 1,
+    "ProductName": "Wireless Headphones",
+    "images": "https://i.ibb.co.com/SwtWs6pk/imgi-12-product2.png",
+    "Size": "Medium",
+    "Price": 79.99,
+    "Stock": 120,
+    "Category": "Electronics",
+    "Rating": 4.5,
+    "Action": "View"
+  },
+  {
+    "ID": 2,
+    "ProductName": "Smart Watch",
+    "images": "https://i.ibb.co.com/dszCXzwx/chair2.png",
+    "Size": "One Size",
+    "Price": 149.99,
+    "Stock": 80,
+    "Category": "Wearables",
+    "Rating": 4.7,
+    "Action": "View"
+  },
+  {
+    "ID": 3,
+    "ProductName": "Bluetooth Speaker",
+    "images": "https://i.ibb.co.com/99cyqYwb/chair3.png",
+    "Size": "Small",
+    "Price": 59.99,
+    "Stock": 150,
+    "Category": "Audio",
+    "Rating": 4.4,
+    "Action": "View"
+  },
+  {
+    "ID": 4,
+    "ProductName": "Gaming Mouse",
+    "images": "https://i.ibb.co.com/rKL9jbDL/imgi-16-product5.png",
+    "Size": "Standard",
+    "Price": 39.99,
+    "Stock": 200,
+    "Category": "Accessories",
+    "Rating": 4.6,
+    "Action": "View"
+  },
+  {
+    "ID": 5,
+    "ProductName": "Mechanical Keyboard",
+    "images": "https://i.ibb.co.com/PzW6RvMY/imgi-18-product7.png",
+    "Size": "Full Size",
+    "Price": 89.99,
+    "Stock": 95,
+    "Category": "Accessories",
+    "Rating": 4.8,
+    "Action": "View"
+  },
+  {
+    "ID": 6,
+    "ProductName": "Laptop Stand",
+    "images": "https://i.ibb.co.com/yntd0fyy/imgi-17-product6.png",
+    "Size": "Adjustable",
+    "Price": 29.99,
+    "Stock": 130,
+    "Category": "Office",
+    "Rating": 4.3,
+    "Action": "View"
+  },
+  {
+    "ID": 7,
+    "ProductName": "4K Monitor",
+    "images": "https://i.ibb.co.com/QFdFyD13/imgi-13-product3.png",
+    "Size": "27 inch",
+    "Price": 299.99,
+    "Stock": 60,
+    "Category": "Electronics",
+    "Rating": 4.9,
+    "Action": "View"
+  },
+  {
+    "ID": 8,
+    "ProductName": "Portable SSD",
+    "images": "https://i.ibb.co.com/J0W4Xrc/imgi-11-product1.png",
+    "Size": "1TB",
+    "Price": 109.99,
+    "Stock": 180,
+    "Category": "Storage",
+    "Rating": 4.7,
+    "Action": "View"
+  },
+  {
+    "ID": 9,
+    "ProductName": "Drone Camera",
+    "images": "https://i.ibb.co.com/29KzB12/imgi-14-product4.png",
+    "Size": "Compact",
+    "Price": 499.99,
+    "Stock": 35,
+    "Category": "Cameras",
+    "Rating": 4.6,
+    "Action": "View"
+  },
+  {
+    "ID": 10,
+    "ProductName": "Smartphone Tripod",
+    "images": "https://i.ibb.co.com/1fq9RbX0/imgi-19-product8.png",
+    "Size": "Adjustable",
+    "Price": 24.99,
+    "Stock": 220,
+    "Category": "Photography",
+    "Rating": 4.2,
+    "Action": "View"
+  },
+  {
+    "ID": 11,
+    "ProductName": "USB-C Hub",
+    "images": "https://i.ibb.co.com/5W6vcxwy/blog-image1.jpg",
+    "Size": "Multi-Port",
+    "Price": 44.99,
+    "Stock": 160,
+    "Category": "Accessories",
+    "Rating": 4.5,
+    "Action": "View"
+  },
+  {
+    "ID": 12,
+    "ProductName": "Noise Cancelling Earbuds",
+    "images": "https://i.ibb.co/wFw6Sstx/Fcu-Cds-101-removebg-preview.png",
+    "Size": "Small",
+    "Price": 99.99,
+    "Stock": 110,
+    "Category": "Audio",
+    "Rating": 4.6,
+    "Action": "View"
+  },
+  {
+    "ID": 13,
+    "ProductName": "Fitness Tracker",
+    "images": "https://i.ibb.co/Q3SL7jjm/FCF-2322-A-min-removebg-preview.png",
+    "Size": "Adjustable",
+    "Price": 69.99,
+    "Stock": 140,
+    "Category": "Wearables",
+    "Rating": 4.3,
+    "Action": "View"
+  },
+  {
+    "ID": 14,
+    "ProductName": "Wireless Charger",
+    "images": "https://i.ibb.co/hJmJMDQT/CES-154-M-side-removebg-preview.png",
+    "Size": "One Size",
+    "Price": 29.99,
+    "Stock": 190,
+    "Category": "Electronics",
+    "Rating": 4.4,
+    "Action": "View"
+  },
+  {
+    "ID": 15,
+    "ProductName": "HD Webcam",
+    "images": "https://i.ibb.co/CpB3LpY3/1160px-Set-of-fourteen-side-chairs-MET-DP110780-removebg-preview.png",
+    "Size": "Standard",
+    "Price": 59.99,
+    "Stock": 90,
+    "Category": "Electronics",
+    "Rating": 4.5,
+    "Action": "View"
+  },
+  {
+    "ID": 16,
+    "ProductName": "Desk Lamp",
+    "images": "https://i.ibb.co/tpDM5Wfh/istockphoto-505973586-612x612-removebg-preview.png",
+    "Size": "Medium",
+    "Price": 39.99,
+    "Stock": 170,
+    "Category": "Office",
+    "Rating": 4.1,
+    "Action": "View"
+  },
+  {
+    "ID": 17,
+    "ProductName": "Smart Home Plug",
+    "images": "https://i.ibb.co/BHp4p8vF/istockphoto-1490325659-612x612-removebg-preview.png",
+    "Size": "Compact",
+    "Price": 19.99,
+    "Stock": 250,
+    "Category": "Smart Home",
+    "Rating": 4.3,
+    "Action": "View"
+  },
+  {
+    "ID": 18,
+    "ProductName": "LED Light Strip",
+    "images": "https://i.ibb.co/XrZvsyJ3/Eureka-Ergonomic-Royal-Office-Chair-black-Reviewer-Photo-SOURCE-Julian-Chokkattu-removebg-preview.png",
+    "Size": "5m",
+    "Price": 24.99,
+    "Stock": 210,
+    "Category": "Decor",
+    "Rating": 4.6,
+    "Action": "View"
+  },
+  {
+    "ID": 19,
+    "ProductName": "VR Headset",
+    "images": "https://i.ibb.co/BHMYGjWL/Ferrero-Premium-Vintage-Chair-maroon-removebg-preview.png",
+    "Size": "Adjustable",
+    "Price": 299.99,
+    "Stock": 40,
+    "Category": "Gaming",
+    "Rating": 4.8,
+    "Action": "View"
+  },
+  {
+    "ID": 20,
+    "ProductName": "Smart TV Box",
+    "images": "https://i.ibb.co/h1ttZfvg/0649677-new-classic-chair-solid-black-red-removebg-preview.png",
+    "Size": "One Size",
+    "Price": 89.99,
+    "Stock": 75,
+    "Category": "Electronics",
+    "Rating": 4.5,
+    "Action": "View"
+  }
+]

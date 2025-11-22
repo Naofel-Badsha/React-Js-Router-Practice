@@ -12,3 +12,18 @@
 .featureProductCard:hover{
     display:  inline-block;
 }
+
+
+.clientFeedbackBanner{
+    background-image: url(https://i.ibb.co.com/393h0p6c/imgi-61-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutbagroundImages{
+    background-image: url(https://i.ibb.co.com/TqM4rGcn/breadcrumb-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
