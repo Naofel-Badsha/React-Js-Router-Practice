@@ -6,7 +6,7 @@ import "../../../public/HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <section className="HeroBgBanner bg-[#F6F4EE]">
+    <section className="HeroBgBanner bg-[#F6F4EE] ">
       <Swiper
         pagination={true}
         modules={[Pagination]}
@@ -15,7 +15,7 @@ const HeroSection = () => {
       >
         {/*---------Banner-------Slider-------1---------*/}
         <SwiperSlide>
-          <div className="h-screen max-w-[1350px] mx-auto sm:px-3">
+          <div className="h-screen max-w-[1350px] mx-auto px-3">
             <div className="">
               <div className="flex flex-col md:flex-row gap-20 items-center justify-between h-screen">
                 {/*-------Text-------*/}
@@ -24,8 +24,9 @@ const HeroSection = () => {
                     NEW ARRIVAL...
                   </h3>
                   <div>
-                    <h1 className="text-6xl sm:leading-16 md:text-6xl md:leading-16 lg:text-[80px] font-medium lg:leading-20 mt-8">
-                      Elevate <br /> Your Home <br /> Aesthetics
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl sm:leading-16  md:leading-16 lg:text-[80px] font-medium lg:leading-20 mt-8">
+                      Elevate <br className="hidden md:block" /> Your Home{" "}
+                      <br className="hidden md:block" /> Aesthetics
                     </h1>
                     <p className="text-[18px] font-[400] text-[#555] mt-8 mb-8 ">
                       A furniture e-commerce company operates in the digital{" "}
@@ -44,7 +45,7 @@ const HeroSection = () => {
                 </div>
 
                 {/*-----------Iamges---------*/}
-                <div className="flex-1">
+                <div className="flex-1 pb-56">
                   <div className="">
                     <div className="relative flex items-center justify-end">
                       <img src="https://i.ibb.co/qYLVKC48/circle.png" />

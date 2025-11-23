@@ -14,7 +14,7 @@ const NavbarTop = () => {
           </div>
 
           {/*----------Location-------------*/}
-          <div>
+          <div className="hidden lg:block">
             <p>TAKE CARE OF YOUR Health 25% OFF USE CODE “ DOFIX03 ”</p>
           </div>
           {/*----------English----USD-------Setting-------------*/}

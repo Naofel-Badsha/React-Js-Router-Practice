@@ -42,91 +42,101 @@ const FeaturedProduct = () => {
         </h1>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 px-5">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={10}
+          slidesPerView={1}
+          spaceBetween={50}
           freeMode={true}
           loop={true}
           modules={[FreeMode, Pagination]}
           className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1280: {
+              slidesPerView: 4,
+            },
+          }}
         >
-          <div>
-            {featureds.map((featured) => (
-              <div key={featured.id}>
-                <SwiperSlide>
-                  <div className="bg-[#f5f1e6] w-[300px] m-auto py-8">
-                    <div class="relative  p-6 rounded-2xl w-72 group cursor-pointer transition-all duration-500 ">
-                      <span class="absolute top-4 left-4 bg-[#B18B5E] text-white text-sm font-semibold px-3 py-1 rounded-full">
-                        {featured.offer}
-                      </span>
-                      <div className="mt-10 flex items-center justify-center">
-                        <img
-                          src={featured.images}
-                          class="w-48 mx-auto transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-
-                      <div class="flex justify-center gap-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                        <button class="bg-[#B18B5E] p-3 rounded-full text-white hover:bg-[#b8a67c] transition">
-                          <FaRegHeart className="text-2xl text-white" />
-                        </button>
-                        <button class="bg-[#B18B5E] p-3 rounded-full text-white hover:bg-[#b8a67c] transition">
-                          <FaRegEye className="text-2xl text-white" />
-                        </button>
-                        <button class="bg-[#B18B5E] p-3 rounded-full text-white hover:bg-[#b8a67c] transition">
-                          <IoBagHandle className="text-2xl text-white" />
-                        </button>
-                      </div>
-                    </div>
+          {featureds.map((featured) => (
+            <SwiperSlide key={featured.id}>
+              <div className="bg-[#f5f1e6] w-full m-auto py-8">
+                <div class="relative  w-full p-6 rounded-2xl group cursor-pointer transition-all duration-500 ">
+                  <span class="absolute top-4 left-4 bg-[#B18B5E] text-white text-sm font-semibold px-3 py-1 rounded-full">
+                    {featured.offer}
+                  </span>
+                  <div className="mt-10 flex items-center justify-center">
+                    <img
+                      src={featured.images}
+                      class="w-48 mx-auto transition-transform duration-500 group-hover:scale-105"
+                    />
                   </div>
 
-                  <div className="px-3">
-                    <h2 className="text-xl font-bold mt-3">{featured.name}</h2>
-                    <div className="flex items-center gap-4">
-                      <div className="rating rating-xs gap-1">
-                        <input
-                          type="radio"
-                          name="rating-5"
-                          className="mask mask-star-2 bg-orange-400"
-                          aria-label="1 star"
-                        />
-                        <input
-                          type="radio"
-                          name="rating-5"
-                          className="mask mask-star-2 bg-orange-400"
-                          aria-label="2 star"
-                          defaultChecked
-                        />
-                        <input
-                          type="radio"
-                          name="rating-5"
-                          className="mask mask-star-2 bg-orange-400"
-                          aria-label="3 star"
-                        />
-                        <input
-                          type="radio"
-                          name="rating-5"
-                          className="mask mask-star-2 bg-orange-400"
-                          aria-label="4 star"
-                        />
-                        <input
-                          type="radio"
-                          name="rating-5"
-                          className="mask mask-star-2 bg-orange-400"
-                          aria-label="5 star"
-                        />
-                      </div>
-                      <span>({featured.rating}) </span>
-                    </div>
-                    <p className="text-[#b18b5e] mt-2 font-semibold text-[18px]">
-                      USD {featured.price}
-                    </p>
+                  <div class="flex justify-center gap-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                    <button class="bg-[#B18B5E] p-3 rounded-full text-white hover:bg-[#b8a67c] transition">
+                      <FaRegHeart className="text-2xl text-white" />
+                    </button>
+                    <button class="bg-[#B18B5E] p-3 rounded-full text-white hover:bg-[#b8a67c] transition">
+                      <FaRegEye className="text-2xl text-white" />
+                    </button>
+                    <button class="bg-[#B18B5E] p-3 rounded-full text-white hover:bg-[#b8a67c] transition">
+                      <IoBagHandle className="text-2xl text-white" />
+                    </button>
                   </div>
-                </SwiperSlide>
+                </div>
               </div>
-            ))}
-          </div>
+
+              <div className="px-3  w-full">
+                <h2 className="text-xl font-bold mt-3">{featured.name}</h2>
+                <div className="flex items-center gap-4">
+                  <div className="rating rating-xs gap-1">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      className="mask mask-star-2 bg-orange-400"
+                      aria-label="1 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      className="mask mask-star-2 bg-orange-400"
+                      aria-label="2 star"
+                      defaultChecked
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      className="mask mask-star-2 bg-orange-400"
+                      aria-label="3 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      className="mask mask-star-2 bg-orange-400"
+                      aria-label="4 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      className="mask mask-star-2 bg-orange-400"
+                      aria-label="5 star"
+                    />
+                  </div>
+                  <span>({featured.rating}) </span>
+                </div>
+                <p className="text-[#b18b5e] mt-2 font-semibold text-[18px]">
+                  USD {featured.price}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
