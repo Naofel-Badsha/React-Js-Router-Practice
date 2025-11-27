@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const RecentBlog = () => {
   return (
-    <section className="bg-[#F5F1E6] py-28">
+    <section className="bg-[#F5F1E6] py-28 px-4">
       <div className="max-w-[1350px] mx-auto">
         {/*-------------Heading-------------*/}
         <div className="flex items-center justify-center">
@@ -13,21 +13,21 @@ const RecentBlog = () => {
                 Read blog
               </h3>
             </div>
-            <h1 className="text-6xl text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[52px] font-semibold lg:leading-20">
+            <h1 className="text-4xl mt-3 md:text-6xl lg:text-6xl text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[52px] font-semibold lg:leading-20">
               Recent Blog
             </h1>
           </div>
         </div>
 
         {/*---------------Card-----Section------------*/}
-        <div className="flex gap-10 flex-col md:flex-row mt-16">
+        <div className="flex gap-10 flex-col lg:flex-row mt-16">
           {/*-------------Left----------Side--------------*/}
-          <div className="p-8 flex gap-10 items-center justify-between bg-white">
+          <div className="p-8 flex gap-10 items-center justify-between flex-col sm:flex-row bg-white">
             <div className="flex-1 ">
               <h5 className="bg-[#F3EEE7] text-[#B18B5E] w-fit py-1 px-2 rounded-full">
                 Chair Desigen
               </h5>
-              <div className="flex items-center gap-10 mt-4">
+              <div className="flex items-start md:items-start lg:items-center flex-col lg:flex-row gap-2 m:gap-10 lg:gap-10 mt-4">
                 <p className="text-[16px] font-medium text-[#808094]">
                   By Alex Manie
                 </p>
@@ -35,7 +35,7 @@ const RecentBlog = () => {
                   jan, 2024
                 </p>
               </div>
-              <h2 className="font-semibold text-[24px] text-black capitalize mt-2">
+              <h2 className="font-semibold text-[20px] md:text-[24px] lg:text-[24px] text-black capitalize mt-2">
                 arrangement that's nearly perfect.
               </h2>
 
@@ -44,18 +44,22 @@ const RecentBlog = () => {
               </button>
             </div>
 
-            <div className="flex-1 flex justify-end">
-              <img src="https://i.ibb.co.com/5W6vcxwy/blog-image1.jpg" alt="" />
+            <div className="flex-1 flex justify-end w-full ">
+              <img
+                className="w-full h-[400px] object-cover"
+                src="https://i.ibb.co.com/5W6vcxwy/blog-image1.jpg"
+                alt=""
+              />
             </div>
           </div>
 
           {/*-------------Right----------Side--------------*/}
-          <div className="p-8 flex gap-10 items-center justify-between bg-white">
+          <div className="p-8 flex  gap-10 items-center justify-between flex-col sm:flex-row bg-white">
             <div className="flex-1 ">
               <h5 className="bg-[#F3EEE7] text-[#B18B5E] w-fit py-1 px-2 rounded-full">
                 Sofa Design
               </h5>
-              <div className="flex items-center gap-10 mt-4">
+              <div className="flex items-start md:items-start lg:items-center flex-col lg:flex-row gap-2 m:gap-10 lg:gap-10 mt-4">
                 <p className="text-[16px] font-medium text-[#808094]">
                   By Alex Manie
                 </p>
@@ -63,7 +67,7 @@ const RecentBlog = () => {
                   jan, 2024
                 </p>
               </div>
-              <h2 className="font-semibold text-[24px] text-black capitalize mt-2">
+              <h2 className="font-semibold text-[20px] md:text-[24px] lg:text-[24px] text-black capitalize mt-2">
                 Eworkstation arrangement that's
               </h2>
 
@@ -72,8 +76,12 @@ const RecentBlog = () => {
               </button>
             </div>
 
-            <div className="flex-1 flex justify-end">
-              <img src="https://i.ibb.co.com/VWFLzMwg/blog-image2.jpg" alt="" />
+            <div className="flex-1 flex justify-end w-full">
+              <img
+                className="w-full h-[400px] object-cover"
+                src="https://i.ibb.co.com/VWFLzMwg/blog-image2.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>

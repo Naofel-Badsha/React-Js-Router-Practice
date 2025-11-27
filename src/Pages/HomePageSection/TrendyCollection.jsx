@@ -18,7 +18,7 @@ const TrendyCollection = () => {
           <h3 className="uppercase text-center bg-[#ebe5d9] text-[#B18B5E] w-fit py-1 px-4 font-bold">
             THIS MONTH
           </h3>
-          <h1 className="text-6xl text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[52px] font-medium lg:leading-20 ">
+          <h1 className="text-4xl mt-3 text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[52px] font-medium lg:leading-20 ">
             Trendy Collection
           </h1>
         </div>

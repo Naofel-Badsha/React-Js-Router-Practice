@@ -143,9 +143,9 @@ const Navbar = () => {
               </div>
 
               {/*------Hambarger----------*/}
-              <div className="flex">
+              {/* <div className="flex">
                 <HiMenuAlt3 className="text-3xl -mr-2 cursor-pointer" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

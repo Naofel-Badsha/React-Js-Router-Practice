@@ -37,7 +37,7 @@ const FeaturedProduct = () => {
         <h3 className="uppercase text-center m-auto bg-[#ebe5d9] text-[#B18B5E] w-fit py-1 px-4 font-bold">
           top sale
         </h3>
-        <h1 className="text-6xl text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[52px] font-medium lg:leading-20 ">
+        <h1 className="text-4xl text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[52px] font-medium lg:leading-20 ">
           Featured Product
         </h1>
       </div>

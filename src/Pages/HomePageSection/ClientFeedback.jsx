@@ -6,7 +6,7 @@ import { FaQuoteRight } from "react-icons/fa6";
 const ClientFeedback = () => {
   return (
     <section className="clientFeedbackBanner mt-28">
-      <div className="max-w-[1350px] mx-auto py-30">
+      <div className="max-w-[1350px] mx-auto py-30 px-4">
         {/*-------------Heading-------------*/}
         <div className="flex items-center justify-center">
           <div className=" text-center m-auto">
@@ -15,7 +15,7 @@ const ClientFeedback = () => {
                 Testimonials
               </h3>
             </div>
-            <h1 className="text-6xl text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[58px] font-bold lg:leading-20 text-white">
+            <h1 className="text-4xl mt-3 md:text-6x lg:text-6x text-center text-[#161616] sm:leading-16 md:text-6xl md:leading-16 lg:text-[58px] font-bold lg:leading-20 text-white">
               Client Feedback
             </h1>
           </div>
@@ -36,7 +36,7 @@ const ClientFeedback = () => {
                 </div>
 
                 <div>
-                  <FaQuoteRight className="text-6xl text-[#B69369]" />
+                  <FaQuoteRight className="text-4xl md:text-5xl lg:text-6xl text-[#B69369]" />
                 </div>
               </div>
 
@@ -59,7 +59,7 @@ const ClientFeedback = () => {
                 </div>
 
                 <div>
-                  <FaQuoteRight className="text-6xl text-[#B69369]" />
+                  <FaQuoteRight className="text-4xl md:text-5xl lg:text-6xl  text-[#B69369]" />
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ const ClientFeedback = () => {
                 </div>
 
                 <div>
-                  <FaQuoteRight className="text-6xl text-[#B69369]" />
+                  <FaQuoteRight className="text-4xl md:text-5xl lg:text-6xl  text-[#B69369]" />
                 </div>
               </div>
 

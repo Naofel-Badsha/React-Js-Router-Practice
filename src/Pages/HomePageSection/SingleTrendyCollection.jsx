@@ -7,7 +7,7 @@ const SingleTrendyCollection = ({ trendy }) => {
   return (
     <section>
       <div className="bg-[#f5f1e6]  m-auto py-8">
-        <div class="relative  p-6 rounded-2xl w-72 group cursor-pointer transition-all duration-500 ">
+        <div class="relative  p-6 rounded-2xl group cursor-pointer transition-all duration-500 ">
           {/* <!-- Discount Badge --> */}
           <span class="absolute top-4 left-4 bg-[#B18B5E] text-white text-sm font-semibold px-3 py-1 rounded-full">
             {offer}

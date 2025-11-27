@@ -6,14 +6,14 @@ const HotDealFurniture = () => {
     <section>
       <div className="flex flex-col lg:flex-row">
         {/*----------------Left-----------*/}
-        <div className="bg-[#F5F1E6] py-28 px-10 flex-1 flex items-center justify-end">
+        <div className="bg-[#F5F1E6] py-28 px-10 flex-1 flex items-center justify-end md:justify-center">
           <div className="bg-[#B18B5E] w-[520px]  p-6">
             <div className="border-[1px] border-white p-14">
               <h3 className="text-[16px] font-bold text-white uppercase">
                 HOT DEAL furniture
               </h3>
-              <h1 className="text-[40px] font-bold text-white mt-7">
-                Live Furniture <br /> Your Love
+              <h1 className="text-3xl md:text-[40px] lg:text-[40px] font-bold text-white mt-7">
+                Live Furniture <br className="hidden md:block" /> Your Love
               </h1>
               <button className="mt-6 bg-white py-3.5 px-8 font-bold hover:bg-sky-100 text-[#18181b] hover:text-[#B18B5E] transition-all duration-300 cursor-pointer">
                 BUY NOW
@@ -24,14 +24,9 @@ const HotDealFurniture = () => {
 
         {/*----------------Right-----------*/}
         <div className="flex-1">
-          {/* <img
-              src="https://i.ibb.co/MDGWt0Vb/imgi-15-bg-image.jpg"
-              className="w-full h-full"
-            /> */}
-
           {/*--------Explien--------------*/}
           <div
-            className="relative w-full h-[635px] bg-cover bg-center"
+            className="relative w-full h-[450px] md:h-[635px] lg:h-[635px] bg-cover bg-center"
             style={{
               backgroundImage:
                 "url('https://i.ibb.co/MDGWt0Vb/imgi-15-bg-image.jpg')",
@@ -61,7 +56,7 @@ const HotDealFurniture = () => {
             </div>
 
             {/*----------------Card-----------2------------*/}
-            <div className="absolute top-[55%] left-[22%] -translate-x-1/2 -translate-y-1/2 group">
+            <div className="absolute hidden md:block top-[55%] left-[22%] -translate-x-1/2 -translate-y-1/2 group">
               <div className="w-16 h-16 bg-white/70 border border-gray-300 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-all">
                 <div className="w-3 h-3 bg-[#B18B5E] rounded-full"></div>
               </div>
@@ -84,7 +79,7 @@ const HotDealFurniture = () => {
             </div>
 
             {/*----------------Card-----------3------------*/}
-            <div className="absolute top-[40%] left-[80%] -translate-x-1/2 -translate-y-1/2 group">
+            <div className="absolute hidden md:block top-[40%] left-[80%] -translate-x-1/2 -translate-y-1/2 group">
               <div className="w-16 h-16 bg-white/70 border border-gray-300 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-all">
                 <div className="w-3 h-3 bg-[#B18B5E] rounded-full"></div>
               </div>

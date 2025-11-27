@@ -2,7 +2,7 @@ import React from "react";
 
 const JionUsCommunity = () => {
   return (
-    <section className="bg-[#fff] py-28 ">
+    <section className="bg-[#fff] py-28 px-4">
       <div className="max-w-[1350px] mx-auto">
         <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/*----------------Card-------1---------*/}
@@ -13,7 +13,7 @@ const JionUsCommunity = () => {
             <p className="text-gray-700 mb-6">
               Get weekly deals, valuable health information and more.
             </p>
-            <button className="border text-[18px] border-gray-800 text-gray-800 px-8 py-3  hover:bg-[#B18B5E] hover:text-white transition duration-300">
+            <button className="border text-[18px] border-gray-800 text-gray-800 px-8 py-3  hover:bg-[#B18B5E] hover:text-white transition duration-300 cursor-pointer">
               SIGN UP &gt;
             </button>
           </div>
@@ -26,7 +26,7 @@ const JionUsCommunity = () => {
             <p className="text-gray-700 text-[16px] mb-6">
               Get weekly deals, valuable health information and more.
             </p>
-            <button className="border text-[18px] border-gray-800 text-gray-800 px-8 py-3  hover:bg-[#B18B5E] hover:text-white transition duration-300 uppercase">
+            <button className="border text-[18px] border-gray-800 text-gray-800 px-8 py-3  hover:bg-[#B18B5E] hover:text-white transition duration-300 uppercase cursor-pointer">
               Join FREE now &gt;
             </button>
           </div>
