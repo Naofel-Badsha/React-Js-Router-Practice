@@ -1,12 +1,32 @@
-import { useEffect, useState } from "react";
+
 
 const ServicesSection = () => {
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    fetch("/public/services.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+ const services = [
+  {
+    "id": 1,
+    "name": "Free Delivery",
+    "description": "Free shipping on all order",
+    "images": "https://i.ibb.co/TDjJKvCR/imgi-42-default.png"
+  },
+  {
+    "id": 2,
+    "name": "Money Return",
+    "description": "Back guarantee under 7 day",
+    "images": "https://i.ibb.co/273bmm92/imgi-43-default.png"
+  },
+  {
+    "id": 3,
+    "name": "Online Support 24/7",
+    "description": "Support online 24 hours a day",
+    "images": "https://i.ibb.co/W4RKHtWk/imgi-44-default.png"
+  },
+  {
+    "id": 4,
+    "name": "Reliable",
+    "description": "Trusted by 1000+ brands",
+    "images": "https://i.ibb.co/jPhNC6L3/imgi-45-default.png"
+  }
+]
 
   return (
     <div className="py-28 max-w-[1350px] mx-auto px-4">
