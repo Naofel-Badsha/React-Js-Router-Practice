@@ -12,7 +12,7 @@ const ServicesSection = () => {
     <div className="py-28 max-w-[1350px] mx-auto px-4">
       <div className="flex items-center justify-center flex-wrap gap-8">
         {services.map((service) => (
-          <div service={service.key} className=" text-center">
+          <div className=" text-center">
             <div className="flex gap-5 text-center items-center m-auto">
               <div>
                 <img className="w-[70px] m-auto " src={service.images} alt="" />
