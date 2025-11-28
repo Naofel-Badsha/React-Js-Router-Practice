@@ -6,7 +6,7 @@ import "../../../public/HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <section className="HeroBgBanner bg-[#F6F4EE] ">
+    <section className="HeroBgBanner bg-[#F6F4EE] px-4 py-4">
       <Swiper
         pagination={true}
         modules={[Pagination]}

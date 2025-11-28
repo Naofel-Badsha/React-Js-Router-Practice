@@ -12,7 +12,9 @@ const AboutUs = () => {
         <div className="aboutbagroundImages py-28 flex items-center justify-center">
           {/*---------------Header------------*/}
           <div>
-            <h1 className="text-[56px] text-white font-bold">About Us</h1>
+            <h1 className="text-4xl md:text-[46px] lg:text-[56px] text-white font-bold">
+              About Us
+            </h1>
             <ul className="flex gap-6 items-center justify-center">
               <li className="text-xl text-white">
                 <Link to="/">Home</Link>
@@ -83,8 +85,9 @@ const AboutUs = () => {
               </div>
             </div>
             {/*---------------Right-----------Side--------*/}
-            <div className="flex-1">
-              <img className="w-full"
+            <div className="flex-1 flex items-center justify-center">
+              <img
+                className="w-full sm:h-[600px] object-cover"
                 src="https://i.ibb.co.com/FqwJ6Jy8/about-image1.jpg"
                 alt=""
               />
@@ -93,15 +96,12 @@ const AboutUs = () => {
         </div>
       </div>
 
-
-
       {/*-------------------Second------Section-------------*/}
       <div className="aboutbagroundImages py-40 flex items-center justify-center">
         <div className="bg-white w-[80px] h-[80px] cursor-pointer m-auto rounded-full  flex items-center justify-center">
-            <FaCirclePlay className="text-3xl"/>
+          <FaCirclePlay className="text-3xl" />
         </div>
       </div>
-
 
       {/*-------------------Third------Section-------------*/}
       <JionUsCommunity></JionUsCommunity>
