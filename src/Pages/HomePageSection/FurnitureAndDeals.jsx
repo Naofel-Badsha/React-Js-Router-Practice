@@ -1,9 +1,18 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const FurnitureAndDeals = () => {
+  useEffect(() => {
+    AOS.init({ duration: "2000" });
+  }, []);
   return (
     <section className="max-w-[1350px] mx-auto px-4">
       <div className="flex gap-10 flex-col lg:flex-row">
         {/*----------------Left-----------Side----------------*/}
-        <div className="relative w-full xl:w-[700px] h-[400px] bg-[url('https://i.ibb.co.com/wZ3CRRS9/imgi-59-ad-discount.jpg')] bg-cover bg-center overflow-hidden">
+        <div
+          data-aos="fade-down-right"
+          className="relative w-full xl:w-[700px] h-[400px] bg-[url('https://i.ibb.co.com/wZ3CRRS9/imgi-59-ad-discount.jpg')] bg-cover bg-center overflow-hidden"
+        >
           <div className="absolute inset-0 bg-black/100 opacity-50"></div>
 
           <div className="absolute flex inset-0 p-8 text-white ">
@@ -29,7 +38,10 @@ const FurnitureAndDeals = () => {
         </div>
 
         {/*----------------Right-----------Side----------------*/}
-        <div className="relative w-full xl:w-[700px] h-[400px] bg-[url('https://i.ibb.co.com/RGKCfqp3/left.jpg')] bg-cover bg-center overflow-hidden">
+        <div
+          data-aos="fade-up-left"
+          className="relative w-full xl:w-[700px] h-[400px] bg-[url('https://i.ibb.co.com/RGKCfqp3/left.jpg')] bg-cover bg-center overflow-hidden"
+        >
           <div className="absolute inset-0 bg-black/100 opacity-50"></div>
 
           <div className="absolute flex inset-0 p-8 text-white ">

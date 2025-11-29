@@ -1,12 +1,21 @@
 import { BsStarFill } from "react-icons/bs";
 import { BsStarHalf } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HotDealFurniture = () => {
+  useEffect(() => {
+    AOS.init({ duration: "2000" });
+  }, []);
   return (
     <section>
       <div className="flex flex-col lg:flex-row">
         {/*----------------Left-----------*/}
-        <div className="bg-[#F5F1E6] py-28 px-10 flex-1 flex items-center justify-end md:justify-center">
+        <div
+          data-aos="fade-up-right"
+          className="flex-1 bg-[#F5F1E6] py-28 px-10 flex items-center justify-end md:justify-center"
+        >
           <div className="bg-[#B18B5E] w-[520px]  p-6">
             <div className="border-[1px] border-white p-14">
               <h3 className="text-[16px] font-bold text-white uppercase">
@@ -23,7 +32,7 @@ const HotDealFurniture = () => {
         </div>
 
         {/*----------------Right-----------*/}
-        <div className="flex-1">
+        <div data-aos="fade-left" className="flex-1">
           {/*--------Explien--------------*/}
           <div
             className="relative w-full h-[450px] md:h-[635px] lg:h-[635px] bg-cover bg-center"

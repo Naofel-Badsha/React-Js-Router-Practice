@@ -4,7 +4,15 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import "../../../public/HeroSection.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const HeroSection = () => {
+   useEffect(() => {
+     AOS.init({ duration: "2000" });
+   }, []);
+
   return (
     <section className="HeroBgBanner bg-[#F6F4EE] px-4 py-4">
       <Swiper
@@ -18,7 +26,7 @@ const HeroSection = () => {
           <div className="h-screen max-w-[1350px] mx-auto px-3">
             <div className="flex flex-col md:flex-row gap-14 md:gap-16 lg:gap-20 items-center justify-between h-screen py-20">
               {/*-------Text-------*/}
-              <div className="flex-1">
+              <div data-aos="fade-up-right" className="flex-1">
                 <h3 className="uppercase bg-[#ebe5d9] text-[#B18B5E] w-fit py-1 px-4 font-bold">
                   NEW ARRIVAL...
                 </h3>
@@ -44,7 +52,7 @@ const HeroSection = () => {
               </div>
 
               {/*-----------Iamges---------*/}
-              <div className="flex-1">
+              <div data-aos="fade-up-left" className="flex-1">
                 <div className="flex items-center justify-end">
                   <div className="relative flex items-center justify-end w-[400px] md:w-[450px] lg:w-[500px]">
                     <img src="https://i.ibb.co/qYLVKC48/circle.png" />
@@ -64,7 +72,7 @@ const HeroSection = () => {
           <div className="h-screen max-w-[1350px] mx-auto px-3">
             <div className="flex flex-col md:flex-row gap-14 md:gap-16 lg:gap-20 items-center justify-between h-screen py-20">
               {/*-------Text-------*/}
-              <div className="flex-1">
+              <div data-aos="fade-up-right" className="flex-1">
                 <h3 className="uppercase bg-[#ebe5d9] text-[#B18B5E] w-fit py-1 px-4 font-bold">
                   NEW ARRIVAL...
                 </h3>
@@ -90,7 +98,7 @@ const HeroSection = () => {
               </div>
 
               {/*-----------Iamges---------*/}
-              <div className="flex-1">
+              <div data-aos="fade-up-left" className="flex-1">
                 <div className="flex items-center justify-end">
                   <div className="relative flex items-center justify-end w-[400px] md:w-[450px] lg:w-[500px]">
                     <img src="https://i.ibb.co/qYLVKC48/circle.png" />
@@ -110,7 +118,7 @@ const HeroSection = () => {
           <div className="h-screen max-w-[1350px] mx-auto px-3">
             <div className="flex flex-col md:flex-row gap-14 md:gap-16 lg:gap-20 items-center justify-between h-screen py-20">
               {/*-------Text-------*/}
-              <div className="flex-1">
+              <div data-aos="fade-up-right" className="flex-1">
                 <h3 className="uppercase bg-[#ebe5d9] text-[#B18B5E] w-fit py-1 px-4 font-bold">
                   NEW ARRIVAL...
                 </h3>
@@ -136,7 +144,7 @@ const HeroSection = () => {
               </div>
 
               {/*-----------Iamges---------*/}
-              <div className="flex-1">
+              <div data-aos="fade-up-left" className="flex-1">
                 <div className="flex items-center justify-end">
                   <div className="relative flex items-center justify-end w-[400px] md:w-[450px] lg:w-[500px]">
                     <img src="https://i.ibb.co/qYLVKC48/circle.png" />

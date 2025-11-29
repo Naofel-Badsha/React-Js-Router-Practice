@@ -2,8 +2,14 @@ import "../../../public/HeroSection.css";
 import { TiStarFullOutline } from "react-icons/ti";
 import { TiStarHalfOutline } from "react-icons/ti";
 import { FaQuoteRight } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ClientFeedback = () => {
+  useEffect(() => {
+    AOS.init({ duration: "2000" });
+  }, []);
   return (
     <section className="clientFeedbackBanner mt-28">
       <div className="max-w-[1350px] mx-auto py-30 px-4">
@@ -25,7 +31,12 @@ const ClientFeedback = () => {
         <div className="mt-12">
           <div className="grid gap-10  md:grid-cols-2 lg:grid-cols-3">
             {/*----------------Card-----------1-------------*/}
-            <div className="bg-white p-8">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              // data-aos-easing="ease-in-sine"
+              className="bg-white p-8"
+            >
               <div className="flex items-center justify-between">
                 <div className="flex items-center justify-center gap-1 mt-3">
                   <TiStarFullOutline className="text-[#E8C54A] text-2xl" />
@@ -48,7 +59,12 @@ const ClientFeedback = () => {
               </p>
             </div>
             {/*----------------Card-----------2-------------*/}
-            <div className="bg-white p-8">
+            <div
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              className="bg-white p-8"
+            >
               <div className="flex items-center justify-between">
                 <div className="flex items-center justify-center gap-1 mt-3">
                   <TiStarFullOutline className="text-[#E8C54A] text-2xl" />
@@ -71,7 +87,12 @@ const ClientFeedback = () => {
               </p>
             </div>
             {/*----------------Card-----------3-------------*/}
-            <div className="bg-white p-8">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              // data-aos-easing="ease-in-sine"
+              className="bg-white p-8"
+            >
               <div className="flex items-center justify-between">
                 <div className="flex items-center justify-center gap-1 mt-3">
                   <TiStarFullOutline className="text-[#E8C54A] text-2xl" />

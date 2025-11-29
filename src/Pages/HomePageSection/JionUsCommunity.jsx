@@ -1,12 +1,23 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const JionUsCommunity = () => {
+      useEffect(() => {
+        AOS.init({ duration: "2000" });
+      }, []);
   return (
     <section className="bg-[#fff] py-28 px-4">
       <div className="max-w-[1350px] mx-auto">
         <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/*----------------Card-------1---------*/}
-          <div className="bg-[#D9F3FB] flex flex-col items-start justify-center p-10 ">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            // data-aos-easing="ease-in-sine"
+            className="bg-[#D9F3FB] flex flex-col items-start justify-center p-10 "
+          >
             <h2 className="text-[26px] font-semibold text-gray-900 mb-2">
               Exclusive offers for you
             </h2>
@@ -19,7 +30,12 @@ const JionUsCommunity = () => {
           </div>
 
           {/*----------------Card-------2---------*/}
-          <div className="bg-[#F9FFE0] flex flex-col items-start justify-center p-10">
+          <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            className="bg-[#F9FFE0] flex flex-col items-start justify-center p-10"
+          >
             <h2 className="text-[26px] font-semibold text-gray-900 mb-2">
               Exclusive offers for you
             </h2>
@@ -32,7 +48,12 @@ const JionUsCommunity = () => {
           </div>
 
           {/*----------------Card-------3---------*/}
-          <div className="bg-[#FFE2E5] flex flex-col items-start justify-center p-10">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="300"
+            // data-aos-easing="ease-in-sine"
+            className="bg-[#FFE2E5] flex flex-col items-start justify-center p-10"
+          >
             <h2 className="text-[26px] font-semibold text-gray-900 mb-2">
               Exclusive offers for you
             </h2>

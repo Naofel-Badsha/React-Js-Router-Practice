@@ -1,9 +1,19 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const OfferSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: "2000" });
+  }, []);
   return (
     <section className="max-w-[1350px] mx-auto px-4">
       <div className="flex gap-10 flex-col lg:flex-row items-center justify-between">
         {/*----------Services--------1-------*/}
-        <div className="flex flex-col-reverse md:flex-row gap-10 items-center justify-between w-full bg-[#EBF9FD] px-16 pb-16 ">
+        <div
+          data-aos="fade-up-right"
+          className="flex flex-col-reverse md:flex-row gap-10 items-center justify-between w-full bg-[#EBF9FD] px-16 pb-16 "
+        >
           <div className="md:pt-0 lg:pt-0">
             <div className="text-center md:text-start lg:text-start">
               <h5 className="text-[16px] text-[#B18B5E] font-semibold">
@@ -30,7 +40,10 @@ const OfferSection = () => {
         </div>
 
         {/*----------Services--------2-------*/}
-        <div className="flex flex-col-reverse md:flex-row gap-10 items-center justify-between w-full bg-[#EBF9FD] p-16">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col-reverse md:flex-row gap-10 items-center justify-between w-full bg-[#EBF9FD] p-16"
+        >
           <div className="">
             <h5 className="text-[16px] text-[#B18B5E] font-semibold text-center md:text-start lg:text-start">
               GET 15% OFF

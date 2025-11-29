@@ -1,7 +1,13 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const RecentBlog = () => {
+     useEffect(() => {
+        AOS.init({ duration: "2000" });
+      }, []);
   return (
     <section className="bg-[#F5F1E6] py-28 px-4">
       <div className="max-w-[1350px] mx-auto">
@@ -22,7 +28,10 @@ const RecentBlog = () => {
         {/*---------------Card-----Section------------*/}
         <div className="flex gap-10 flex-col lg:flex-row mt-16">
           {/*-------------Left----------Side--------------*/}
-          <div className="p-8 flex gap-10 items-center justify-between flex-col sm:flex-row bg-white">
+          <div
+            data-aos="fade-up-right"
+            className="p-8 flex gap-10 items-center justify-between flex-col sm:flex-row bg-white"
+          >
             <div className="flex-1 ">
               <h5 className="bg-[#F3EEE7] text-[#B18B5E] w-fit py-1 px-2 rounded-full">
                 Chair Desigen
@@ -54,7 +63,10 @@ const RecentBlog = () => {
           </div>
 
           {/*-------------Right----------Side--------------*/}
-          <div className="p-8 flex  gap-10 items-center justify-between flex-col sm:flex-row bg-white">
+          <div
+            data-aos="fade-left"
+            className="p-8 flex  gap-10 items-center justify-between flex-col sm:flex-row bg-white"
+          >
             <div className="flex-1 ">
               <h5 className="bg-[#F3EEE7] text-[#B18B5E] w-fit py-1 px-2 rounded-full">
                 Sofa Design
